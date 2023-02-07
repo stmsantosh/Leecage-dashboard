@@ -1,0 +1,498 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bodyWrapper_stats {
+    background-color: #f5f5f5;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.project_stats {
+    padding-top: 40px;
+}
+
+.graph-container {
+    padding: 15px 20px 15px 40px;
+    border: 1px solid #e6ebf1;
+    position: relative;
+    min-height: 100%;
+}
+
+.bodyWrapper_stats .row .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.stats--heading {
+    font-size: 22px;
+    line-height: normal;
+    margin: 0 0 25px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.pro_stats--main {
+    background: #fff;
+    padding: 25px 25px 0;
+}
+
+.caption {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    color: #343434;
+    letter-spacing: 0.3px;
+    margin: 0 0 5px;
+    padding-right: 20px;
+}
+
+.stats--inside {
+    display: flex;
+    align-items: center;
+}
+
+.stats--inside #hero-bar {
+    width: 70%;
+    left: -30px;
+}
+
+.stats--right {
+    width: 30%;
+}
+
+.stats--details+.stats--details {
+    padding-top: 15px;
+}
+
+.stats--details .name {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.stats--details .team--work {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.stats--details.one .name {
+    color: #2a8eca;
+}
+
+.stats--details.two .name {
+    color: #eb833c;
+}
+
+.stats--details.three .name {
+    color: #64bc67;
+}
+
+.stats--details.four .name {
+    color: #b176d4;
+}
+
+.stats--count {
+    border-top: 1px solid #e3e3e3;
+}
+
+.stats--count:last-child {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.stats--count p {
+    font-size: 13px;
+    margin: 0;
+    padding: 15px 0;
+    letter-spacing: 0;
+}
+
+.proj_box--three #hero-bar {
+    width: 100%;
+}
+
+.project--title {
+    font-size: 14px;
+    color: #333333;
+    margin: 5px 0 15px;
+}
+
+.pro_stats--main .stats--inside {
+    align-items: inherit;
+}
+
+.pro_stats--main .milestone--number {
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.caption_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caption--radio p {
+    font-size: 13px;
+    line-height: normal;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.caption--right {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.caption--radio span {
+    height: 12px;
+    width: 12px;
+    background: #2a8eca;
+    display: block;
+    border-radius: 3px;
+    margin-right: 4px;
+}
+
+span.clr {
+    background-color: #4abe74;
+}
+
+body .caption--radio span.logclr {
+    background-color: #db5d60;
+}
+
+body .caption--radio span.noclr {
+    background-color: #ffc17a;
+}
+
+body .caption--radio span.exclr {
+    background-color: #f3854b;
+}
+
+body .caption--radio span.bclr {
+    background-color: #008cc6;
+}
+
+.caption--radio {
+    display: flex;
+    align-items: center;
+}
+
+.caption--radio:nth-child(2) span {
+    background-color: #5cbd6c;
+}
+
+.caption--radio:nth-child(3) span {
+    background-color: #d35b5c;
+}
+
+.caption--radio+.caption--radio {
+    margin-left: 22px;
+}
+
+.milestone--number {
+    background: #f5f5f5;
+    font-size: 44px;
+    font-weight: 600;
+    color: #2a8eca;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 20px 0 0;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.milestone--number span {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    color: #333333;
+    font-weight: 500;
+}
+
+.milestone--right {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 10px 5px;
+    margin-top: 10px;
+}
+
+.milestone--right .date {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0;
+}
+
+.milestone--right .right--context {
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 0;
+}
+
+.stats--inside.milestone {
+    align-items: inherit;
+}
+
+.milestone_stats .milestone--number {
+    margin-left: 0;
+    margin-top: 0px;
+}
+
+.milestone_stats .stats--right {
+    margin-top: 20px;
+}
+
+.miles_box--one .milestone--right {
+    margin-top: 0;
+}
+
+.milestone--right .lnr {
+    font-size: 28px;
+    background: #fff;
+    padding: 11px;
+    border-radius: 50%;
+    margin: 0 auto 5px;
+    display: block;
+    width: fit-content;
+}
+
+.miles_box--four .caption--radio:first-child span {
+    background-color: #d25a5b;
+}
+
+.miles_box--four .caption_main {
+    margin-bottom: 10px;
+}
+
+#hero-graph {
+    left: -10px;
+}
+
+.small_box .graph-container .caption {
+    width: 50%;
+}
+
+.small_box .graph-container .caption--right {
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.revenue_stats .caption ul li {
+    display: inline-block;
+    font-size: 13px;
+    line-height: normal;
+    border: 1px solid #e3e3e3;
+    padding: 8px;
+    color: #888888;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.revenue_stats .caption ul li:hover {
+    color: #ffffff;
+    background: #2a8eca;
+}
+
+.revenue_stats .stats--inside {
+    flex-wrap: wrap;
+}
+
+.revenue--perctnge span {
+    height: 12px;
+    width: 12px;
+    background: #f3854b;
+    display: block;
+    border-radius: 3px;
+    margin-right: 4px;
+}
+
+.revenue--perctnge {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.revenue--perctnge {
+    margin-top: 10px;
+}
+
+.revenue--perctnge:nth-child(2) span {
+    background-color: #4abe74;
+}
+
+.revenue--perctnge:nth-child(3) span {
+    background-color: #008cc6;
+}
+
+.revenue--perctnge p {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.revenue_stats .revenue--perctnge span {
+    margin-right: 7px;
+}
+
+.stats--inside_left {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.stats--inside_right {
+    width: 50%;
+    background: #f5f5f5;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* .revenue_box--two.small_box svg {
+    left: -165px !important;
+} */
+
+.stats--inside_right h6 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 12px;
+}
+
+.cssProgress {
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cssProgress .progress1,
+.cssProgress .progress2,
+.cssProgress .progress3,
+.cssProgress .progress4,
+.cssProgress .progress5 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cssProgress-bar {
+    height: 10px;
+}
+
+.progress1 .cssProgress-bar {
+    background-color: #eb833c;
+}
+
+.progress2 .cssProgress-bar {
+    background-color: #2a8eca;
+}
+
+.progress3 .cssProgress-bar {
+    background-color: #66bb68;
+}
+
+.progress4 .cssProgress-bar {
+    background-color: #eb833c;
+}
+
+.progress5 .cssProgress-bar {
+    background-color: #2a8eca;
+}
+
+.progress1 {
+    background: #f4e2d6;
+}
+
+.progress2 {
+    background: #d4e6f2;
+}
+
+.progress3 {
+    background: #d0edd1;
+}
+
+.progress4 {
+    background: #f4e2d6;
+}
+
+.progress5 {
+    background: #d4e6f2;
+}
+
+.cssProgress-label {
+    font-size: 13px;
+    margin-left: 12px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.cssProgress--name {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.revenue-bar-main {
+    margin-top: 7px;
+}
+
+.revenue--bars {
+    max-height: 230px;
+    overflow: auto;
+}
+
+.left-y,
+.bottom-x {
+    font-size: 11px;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    color: #888888;
+}
+
+.left-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    left: -30px;
+}
+
+.bottom-x {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    bottom: -5px;
+}
+
+/* svg>g>g.google-visualization-tooltip {
+    pointer-events: none
+} */
+div#donut-example {
+    cursor: pointer;
+}
+
+div#donut-examples {
+    cursor: pointer;
+}
+
+tspan {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+}
+
+div#donut-example {
+    margin: auto;
+    height: 250px;
+    width: 250px;
+}

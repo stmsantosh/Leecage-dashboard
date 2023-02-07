@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="stylesheet" href="css/dash.css">
+    <link rel="stylesheet" href="css/graph.css">
+    <title>Project Overrun(Hours)</title>
+</head>
+
+<body>
+    <header class="hero-header d-flex align-items-center justify-content-between">
+        <div class="primary-logo">
+            <ul class="d-flex align-items-center">
+                <li><a href="#"><img src="assets/images/logo.svg" class="logo"></a></li>
+                <li><a href="#"><img src="assets/images/leecage-logo.png"></a></li>
+            </ul>
+        </div>
+        <div class="pageTitle">
+            <h2>Dashboard</h2>
+        </div>
+        <div class="primary-nav d-flex">
+            <div class="profileDropdown">
+                <div class="nav-dropdown">
+                    <div class="user-menu-wrap">
+                        <div class="dropdown profile-dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="img"><img src="assets/images/author.png"></span><span
+                                    class="name">Jaswinder Singh</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                                style="will-change: transform;">
+                                <a class="dropdown-item" href=""><img src="assets/images/profile.png">Profile</a>
+                                <a class="dropdown-item" href=""><img src="assets/images/settings.png">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href=""><img
+                                        src="assets/images/logout.png">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="menu-toggle"><img src="assets/images/menu-toggle.png"></span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn">x</a>
+                <h4 class="menuTitle">Menu</h4>
+                <ul>
+                    <li><a href="#">Project Progress</a></li>
+                    <li><a href="#">Milestone Listing</a></li>
+                    <li><a href="#">Resource Evaluation</a></li>
+                    <li><a href="#">Logged Vs Billing</a></li>
+                    <li><a href="#">Verify Activity Log</a></li>
+                    <li><a href="#">Daily Billing</a></li>
+                </ul>
+                <div class="seprator w-100"></div>
+                <h4 class="menuTitle">Masters</h4>
+                <ul>
+                    <li><a href="upwork-profiles.html">Upwork Profiles</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="designation.html">Designation</a></li>
+                    <li><a href="department.html">Department</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="team-resources.html">Team Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="bodyWrapper_stats project_stats">
+        <div class="pro_stats--main">
+            <div class="container-fluid">
+
+                <div class="action-btn-flex action-btn secondaryAction__bar">
+                    <div class="secondaryAction--left">
+                        <h3 class="innerHeading">
+                            <h3 class="stats--heading">Project Overrun(Hours)</h3>
+                        </h3>
+                    </div>
+                    <div class="secondaryAction--right">
+
+                        <button class="btn-lg filter-btn" data-toggle="modal" data-target="#filterModalProjectPorgress">
+                            <span class="lnr lnr-funnel"></span>
+                        </button>
+                        <div class="select-blue bg-colored-box select-nice-dropdown">
+                            <p>
+                            <p>
+                            <div id="reportrange" class="pull-left"
+                                style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                                <span class="space"></span> <b class="caret"></b>
+                                <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+
+                            </div>
+                        </div>
+                        <div class="select-beige bg-colored-box drop-box">
+                            <select id="LeemoResourceLeecageList"
+                                class="js-select2 search-select-box form-control select2-hidden-accessible">
+
+                                <option selected="selected" value="" data-display="Coordinator"
+                                    data-select2-id="select2-data-2-bcr4">
+                                    All Project Managers</option>
+                                <option value="2ed6fb11-3402-4379-be2c-c70373a86743">Aarti Shrimali</option>
+                                <option value="dcd88483-4118-4413-bb3a-a98fd8b44f5a">Agnivesh Tiwari</option>
+                                <option value="3ab2edb0-7056-4d39-a885-0c8e8ed96a94">Amit Gupta</option>
+                                <option value="5741dcd6-6df5-4109-a8d8-7994b71cb8cf">Ankush Kumar</option>
+                                <option value="037ffd73-8c55-4283-b7cc-4b02594f92b3">Bhanu Partap Singh</option>
+                                <option value="af3041c8-ea1d-48fe-aa9e-0b47567014fe">Charandeep Singh</option>
+                                <option value="6e5dccd9-1cc9-499e-94db-dad6f72900db">Daljit Singh Dullat</option>
+                                <option value="d253c2cb-64d0-42e2-8265-d61a1f1df116">Deepak Dhyani</option>
+                                <option value="063a8d37-f842-4b44-993e-e52eee87ae9f">Des Raj Chauhan</option>
+                                <option value="5e2ff787-f8bd-4f56-8cb6-c78ec17b25d0">Gaurav Chawla</option>
+                                <option value="7738ac95-48d4-4b2d-87c7-16d34d5f67f0">goldy</option>
+                                <option value="568e6aa1-2091-471c-9adb-124eef2ebbf3">Gourav Tinna</option>
+                                <option value="49d18c15-103d-4d38-911c-f02866f507a7">Harjinder Kaur</option>
+                                <option value="27214180-5636-4d1b-924c-1a46fae40d33">Jatinder Singh PHP Developer
+                                </option>
+                                <option value="a83a66c7-db6f-46fa-81e9-305838d8b8cf">John</option>
+                                <option value="6fadfd4b-e608-4174-9471-a035b8d2c3b9">Joy Chowdhury</option>
+                                <option value="42da105b-32bd-4818-b4d7-09cf69b6c3c6">Kamalpreet Singh</option>
+                                <option value="e81f1b93-d0aa-4cf7-9cb2-b0560194d6a4">Manav Saini</option>
+                                <option value="255bf453-b950-49c9-8d6a-739d8d73d11c">Navdeep Singh Chahal</option>
+                                <option value="76390db1-3b9f-46bf-b55d-e50051948992">Padma Rana</option>
+                                <option value="3b68b677-4cb0-4385-865b-d29cb36592eb">Payal</option>
+                                <option value="45b608fe-c511-4eb1-ae8d-ab30517b1cbc">Puneet Sharma</option>
+                                <option value="c3aa525e-6272-4c0c-851c-5aaf057e52ab">Rinku Dogra</option>
+                                <option value="38af74aa-1a69-4357-8281-877fc8557e6f">Sachin</option>
+                                <option value="ccb0bad6-b32f-4651-8a64-7c49efd411c5">Sharda</option>
+                                <option value="35f5c5a8-283c-4a0d-8303-fe6b622249fa">Tanuj</option>
+                                <option value="6b9f50ba-4162-40af-acb1-6478b79f58fa">tech prastish</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 proj_box--two">
+                        <div class="graph-container flex">
+                            <!-- <div class="caption">Project Overrun(Hours)</div> -->
+                            <div class="stats--inside">
+                                <div class="rotate_horizontal">
+                                    <span class="hours_horz titlespan">PERCENTAGE</span>
+                                </div>
+                                <div id="hero-bar" class="graph" style="position: relative;">
+
+                                    <div id="chart_div" class="charts"></div>
+                                    <span class="titlespan">PROJECT MANAGERS</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 proj_box--three small_box">
+                        <div class="graph-container flex">
+                            <div class="caption_main flex-space">
+                                <div>
+                                    <h2>16</h2>
+                                    <div class="txticon">
+                                        <i class="fa-solid fa-arrow-trend-down"></i>
+                                        <span>Overrun Projects</span>
+                                    </div>
+                                    <p>Total Overrun Project in past 6 Months.</p>
+                                </div>
+                                <div>
+                                    <h2>30%</h2>
+                                    <div class="txticon">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <span>increase in percentages from previous data.</span>
+
+                                    </div>
+                                    <p>Total incerease in percentage of Overrun Project in previous 6 Month Data.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bodyWrapper_stats project_stats">
+        <div class="pro_stats--main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table
+                            class="table table-wrapper bordered-style-table last-child-table progress-table dataTable no-footer"
+                            style="width: 100%;" id="DataTables_Table_0" role="grid">
+                            <thead>
+                                <tr role="row">
+                                    <th class="column ascending sorting_disabled" data-orderable="false" rowspan="1"
+                                        colspan="1" aria-label="Task Name" style="width: 200px;">S No</th>
+                                    <th style="display: none; width: 0px;" class="sorting sorting_desc" tabindex="0"
+                                        aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                                        aria-sort="descending" aria-label=": activate to sort column ascending"></th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                        colspan="1" aria-label=" Amount ($): activate to sort column ascending"
+                                        style="width: 117px;">
+                                        Project Name
+                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                        colspan="1" aria-label="Expected On: activate to sort column ascending"
+                                        style="width: 132px;">
+                                        End Date
+                                    </th>
+
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                        colspan="1" aria-label="Release On: activate to sort column ascending"
+                                        style="width: 116px;">Exceeded no of hours
+                                        On
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>#999 | xyz | FOP | IOS</td>
+                                    <td>22.06.2022</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>#999 | xyz | FOP | IOS</td>
+                                    <td>22.05.2022</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>#999 | xyz | FOP | IOS</td>
+                                    <td>22.04.2022</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- bootstrap js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://morrisjs.github.io/morris.js/js/morris.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src='path_to/raphael.min.js'></script>
+    <script src="https://kit.fontawesome.com/c7a1b9b71e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css"> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
+    <script src='path_to/morris.js'></script>
+    <script src='path_to/morris.js'></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/graph.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".js-select2").select2();
+
+
+            $(".js-select2-multi").select2();
+            $(".js-select2-multi").val('A').trigger('change');
+
+            $(".large").select2({
+                dropdownCssClass: "big-drop",
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
